@@ -1,0 +1,26 @@
+import phonenumbers as pn
+
+digit1 = input('First digit of your phone number: ')
+digit2 = input('Second digit to your phone number: ')
+digit3 = input('Third digit to your phone number: ')
+digit4 = input('Fourth digit: ')
+digit5 = input('Fifth ')
+digit6 = input('Sixth ')
+digit7 = input('Seven ')
+digit8 = input('eighttt ')
+digit9 = input('ninth ')
+digit10 = input('tenth ')
+
+formatter = pn.AsYouTypeFormatter("US")
+formatter.input_digit(digit1)
+formatter.input_digit(digit2)
+formatter.input_digit(digit3)
+formatter.input_digit(digit4)
+formatter.input_digit(digit5)
+formatter.input_digit(digit6)
+formatter.input_digit(digit7)
+formatter.input_digit(digit8)
+formatter.input_digit(digit9)
+full_number = formatter.input_digit(digit10)
+
+print(full_number)

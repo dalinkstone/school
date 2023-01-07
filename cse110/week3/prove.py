@@ -106,7 +106,7 @@ while True:
     else:
         break
 
-change = payment_amount - total_price
+change = round(payment_amount - total_price, 2)
 
 print(f'Change:     ${change}')
 

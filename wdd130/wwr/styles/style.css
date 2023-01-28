@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@300&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +10,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -21,13 +25,20 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background: #772014;
 }
 
 body {
- background-color: #AF4319;
+    background-color: #AF4319;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -41,8 +52,12 @@ nav a:hover {
 
 .book, .join {
     background-color: #772014;
+    font-size: 18px;
     color: white;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -52,19 +67,26 @@ nav a:hover {
 
 .msg {
     background-color: #772014;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
+    font-family: 'Nunito', sans-serif;
     color: white;
 }
 
 .msg p {
+    font-size: .8em;
     color: white;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #3F220F;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -84,8 +106,19 @@ footer p {
     font-size: 1.2em;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
     color: white;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -96,10 +129,24 @@ h4 {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #56A3A6;
+}
+

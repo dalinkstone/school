@@ -7,6 +7,7 @@ console = Console()
 the_word = choice(word_list)
 num_guesses = 0
 already_guessed = []
+guessed = []
 pattern = []
 
 Colors = {
@@ -53,6 +54,7 @@ while guess != the_word:
     
     guessed_letters_print = ''.join(guessed_letters)
     guess_pattern_print = ''.join(guess_pattern)
+    guessed.append(guessed_letters_print)
     pattern.append(guess_pattern_print)
 
     if guess == the_word:
@@ -67,6 +69,7 @@ while guess != the_word:
     console.print(guess_pattern_print)
     print('\n')
     console.print(f'[white on blue]You have already guessed: {already_guessed}')
+    console.print(*guessed, sep='\n')
     console.print(*pattern, sep='\n')
     print('\n')
 

@@ -62,6 +62,7 @@ while guess != the_word:
         print(f'You guessed the word in {num_guesses} guesses!\n')
         print('You guessed the following words with the following patterns.')
         console.print(f'[white on blue]{already_guessed}[/]')
+        console.print(*guessed, sep='\n')
         console.print(*pattern, sep='\n')
         break
 

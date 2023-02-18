@@ -1,7 +1,6 @@
 from random import choice
 from words import word_list
 from rich.console import Console
-from rich.prompt import Prompt
 
 console = Console()
 the_word = choice(word_list)

@@ -33,7 +33,7 @@ while option != 6:
     if option not in accepted_options:
         console.print('[red]ERROR: Please enter a number corresponding to your desired action.\n')
     elif option == 6:
-        console.print('[white on red]Thank you for using yStockCart! Come again![/]')
+        console.print('[white on purple]Thank you for using yStockCart! Come again![/]')
         quit()
     else:
         print('\n')
@@ -167,7 +167,7 @@ while option != 6:
         print()
         console.print('[white on red]ERROR: That is not a valid number.')
         print()
-        
+
 
 
 

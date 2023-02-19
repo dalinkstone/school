@@ -68,7 +68,7 @@ while option != 6:
 
         stock_cur_price = stock.quotes[add_stock]['regularMarketPrice']
         num_shares = 1
-        console.print(f'[white on purple]The current price of {stock_name} is {stock_cur_price}.[/]\n')
+        console.print(f'[white on purple]The current price of {stock_name} is {stock_cur_price:.2f}.[/]\n')
         while True:
             num_shares = int(input('How many shares would you like?: '))
             if num_shares > 1000:
@@ -78,7 +78,7 @@ while option != 6:
         
         print()
 
-        console.print(f'[purple]The total value of the {num_shares} shares of {stock_name} is: {num_shares*stock_cur_price}.\nWe will add this to your cart.')
+        console.print(f'[purple]The total value of the {num_shares} shares of {stock_name} is: {num_shares*stock_cur_price:.2f}.\nWe will add this to your cart.')
         stock_cart_prices.append(num_shares*stock_cur_price)
 
         print()
@@ -101,7 +101,7 @@ while option != 6:
             elif option3_choice.lower() == "everything":
                 print_dict = dict(zip(stock_cart_names, stock_cart_prices))
                 print()
-                print('\n'.join("{}: ${}".format(key, value) for key, value in print_dict.items()))
+                print('\n'.join("{}: ${:.2f}".format(key, value) for key, value in print_dict.items()))
                 print()
                 break
             else:
@@ -152,11 +152,11 @@ while option != 6:
         console.print('[white on purple]It is time to compute the total amount due to purchase the stock investments in your cart.\nTo refresh your memory, this is what is currently in your cart:\n')
 
         compute_dict = dict(zip(stock_cart_names, stock_cart_prices))
-        print('\n'.join("{}: ${}".format(key, value) for key, value in compute_dict.items()))
+        print('\n'.join("{}: ${:.2f}".format(key, value) for key, value in compute_dict.items()))
         print()
 
 
-        console.print(f'[white on purple]Your total amount due is: {sum(stock_cart_prices)}')
+        console.print(f'[white on purple]Your total amount due is: {sum(stock_cart_prices):.2f}')
 
         print()
         console.print('[purple]Please select one of the following options:\n')

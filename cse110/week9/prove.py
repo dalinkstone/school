@@ -147,7 +147,7 @@ while option != 6:
         console.print(*options, sep='\n')
         print()
 
-    else:
+    elif option == 5:
         os.system('cls')
         console.print('[white on purple]It is time to compute the total amount due to purchase the stock investments in your cart.\nTo refresh your memory, this is what is currently in your cart:\n')
 
@@ -155,11 +155,19 @@ while option != 6:
         print('\n'.join("{}: ${}".format(key, value) for key, value in compute_dict.items()))
         print()
 
-        console.print(f'[white on purple]Your total amount due is: ')
 
+        console.print(f'[white on purple]Your total amount due is: {sum(stock_cart_prices)}')
+
+        print()
+        console.print('[purple]Please select one of the following options:\n')
+        console.print(*options, sep='\n')
+        print()
+    
+    else:
+        print()
+        console.print('[white on red]ERROR: That is not a valid number.')
+        print()
         
-
-
 
 
 

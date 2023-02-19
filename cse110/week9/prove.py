@@ -100,6 +100,7 @@ while option != 6:
                 break
             elif option3_choice.lower() == "everything":
                 print_dict = dict(zip(stock_cart_names, stock_cart_prices))
+                print()
                 print('\n'.join("{}: ${}".format(key, value) for key, value in print_dict.items()))
                 print()
                 break
@@ -117,14 +118,20 @@ while option != 6:
         console.print('[purple]In order to remove a stock from your cart, you must provide the list number as shown below.')
         console.print('[white on red]Failure to provide the list number as shown will result in an error.')
 
-        print('\n'.join(f"{num}. {item}" for num, item in enumerate(stock_cart_names)))
+        print('\n'.join(f"{num+1}. {item}" for num, item in enumerate(stock_cart_names)))
+
+        stock_enumeration = [num+1 for num, item in enumerate(stock_cart_names)]
+        print(stock_enumeration)
 
         while True:
             try:
                 stock_removal_num = int(input('Which number item would you like to remove?: '))
-                break
+                if stock_removal_num in stock_enumeration:
+                    break
+                else:
+                    console.print('[red]ERROR: Enter a number item.\n')
             except:
-                console.print('[red]ERROR: Enter a number item.')
+                console.print('[red]ERROR: Enter a number item.\n')
 
         while True: 
             try:

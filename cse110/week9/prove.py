@@ -121,7 +121,6 @@ while option != 6:
         print('\n'.join(f"{num+1}. {item}" for num, item in enumerate(stock_cart_names)))
 
         stock_enumeration = [num+1 for num, item in enumerate(stock_cart_names)]
-        print(stock_enumeration)
 
         while True:
             try:

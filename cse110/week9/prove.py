@@ -1,4 +1,4 @@
-import yfinance as yf
+from yahooquery import Ticker
 from rich.console import Console
 from art import *
 import os
@@ -52,20 +52,21 @@ while option != 6:
         print()
     
     elif option == 2:
-        console.print('[white on purple]In order to add a stock to your cart, you must use the Ticker symbol.\nATTENTION: Failure to use a proper Ticker Symbol will result in an error.')
-
+        console.print('[white on purple]In order to add a stock to your cart, you must use the Ticker symbol.')
+        console.print('[white on red]ATTENTION: Failure to use a proper Ticker Symbol will result in an error.\n')
         while True:
             add_stock = input('What stock would you like to add?: ')
             if not add_stock.isalpha():
                 console.print('[red]ERROR: Ticker Symbols do not use numbers.')
             else:
+                add_stock = add_stock.upper()
                 break
         
-        stock = yf.Ticker(add_stock)
-        stock_name = stock.info['shortName']
+        stock = Ticker(add_stock)
+        stock_name = stock.quotes[add_stock]['displayName']
         stock_cart_names.append(stock_name)
 
-        stock_cur_price = stock.info['bid']
+        stock_cur_price = stock.quotes[add_stock]['regularMarketPrice']
         num_shares = 1
         console.print(f'[white on purple]The current price of {stock_name} is {stock_cur_price}.[/]\n')
         while True:
@@ -114,7 +115,7 @@ while option != 6:
     elif option == 4:
         os.system('cls')
         console.print('[purple]In order to remove a stock from your cart, you must provide the list number as shown below.')
-        console.print('[white on red]Failure to provide the Ticker symbol will result in an error.')
+        console.print('[white on red]Failure to provide the list number as shown will result in an error.')
 
         print('\n'.join(f"{num}. {item}" for num, item in enumerate(stock_cart_names)))
 

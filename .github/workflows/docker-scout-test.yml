@@ -75,7 +75,7 @@ jobs:
       
       - name: Docker Scout
         id: docker-scout
-        if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'push' }}
         uses: docker/scout-action@v0.18.1
         with:
           command: compare

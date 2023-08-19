@@ -43,8 +43,8 @@ jobs:
         uses: docker/login-action@v2.1.0
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PAT }}
+          username: conseptraadmin
+          password: dckr_pat_ZMmA5GAwZylnvSD_IlLQqbeKj8E
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action

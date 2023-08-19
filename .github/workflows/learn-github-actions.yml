@@ -6,7 +6,7 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
-  image: 'vonwig/nodejs-service'
+  image: 'library/alpine'
 
 stages:
 - stage: Build

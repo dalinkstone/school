@@ -7,4 +7,6 @@ COPY ./test /test/
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN python ./test/tester.py
+RUN cd test 
+
+RUN python tester.py

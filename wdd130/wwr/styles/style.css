@@ -1,0 +1,183 @@
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+#rivers-msg h1 {
+    text-align: left;
+}
+
+.rivers-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+.button-box {
+    text-align: center;
+}
+
+
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+#background {
+    height: 725px;
+    background: #772014;
+}
+
+body {
+    background-color: #AF4319;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+header {
+    background-color: #56A3A6;
+}
+
+
+
+.book, .join {
+    background-color: #56A3A6;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.msg {
+    background-color: #AF4319;
+    line-height: 1.5em;
+}
+
+.salmon {
+    margin-top: 10px;
+    grid-column: 12/13;
+    grid-row: 1/2;
+    z-index: 10;
+}
+
+.idaho-msg {
+    background-color: #772014;
+    line-height: 1.5em;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.idaho-msg h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.utah-msg {
+    background-color: #772014;
+    line-height: 1.5em;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.utah-msg h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+
+.msg h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.msg p {
+    font-size: .8em;
+    color: white;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #3F220F;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccffff;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.home-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: white;
+}
+
+.logo {
+    width: 80px;
+}
+
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img, .mountains {
+    width: 40%;
+}
+

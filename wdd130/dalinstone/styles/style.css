@@ -63,15 +63,33 @@ body > div {
 header {
     margin: 0;
     padding: 0;
+    font-family: 'Varela Round';
 }
 
 h1 {
+    font-family: 'Varela Round';
     margin-top: 0;
     margin-bottom: 50px;
     width: 60%;
     height: 50px;
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
+}
+
+h2 {
+    font-family: 'Varela Round';
+}
+
+h3 {
+    font-family: 'Varela Round';
+}
+
+h4 {
+    font-family: 'Varela Round';
+}
+
+p {
+    font-family: 'Source Sans Pro';
 }
 
 div h1 {
@@ -120,7 +138,7 @@ section {
 .rock {
     position: relative;
     padding-left: 65%;
-    top: -250px;
+    top: -300px;
 }
 
 

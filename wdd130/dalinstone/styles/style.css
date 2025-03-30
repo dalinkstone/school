@@ -45,6 +45,97 @@ main > div {
     margin: 0;
 }
 
+.griddy {
+    display: grid;
+    grid-template: auto;
+}
+
+.griddy section {
+    margin-bottom: 25px;
+}
+
+.griddy .proj {
+    margin-left: 50px;
+    grid-column: 1 / span 5; 
+    grid-row: 1;
+}
+
+.griddy .shaka {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.pic1 {
+    width: 40%;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+.pic2 {
+    width: 40%;
+    margin-left: 270px;
+    margin-top: 200px;
+}
+
+.griddy .idea {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.griddy .sec {
+    grid-row: 2;
+    grid-column: 3 / span 4;
+}
+
+.griddy .qual {
+    grid-row: 3;
+    grid-column: 3 / span 4;
+}
+
+.griddy .gold {
+    grid-row: 4;
+    grid-column: 3 / span 4;
+}
+
+.griddy .data {
+    grid-row: 5;
+    grid-column: 3 / span 4;
+}
+
+.griddy .soc {
+    grid-row: 6;
+    grid-column: 3 / span 4;
+}
+
+.griddy .bdr {
+    grid-row: 7;
+    grid-column: 3 / span 4;
+}
+
+.griddy .srbdr {
+    grid-row: 8;
+    grid-column: 3 / span 4;
+}
+
+.griddy .ae {
+    grid-row: 9;
+    grid-column: 3 / span 4;
+}
+
+.griddy .csm {
+    grid-row: 10;
+    grid-column: 3 / span 4;
+}
+
+.griddy .accent {
+    top: 0;
+    grid-row: 1 / 12;
+    grid-column: 6 / span 7;
+    background-color: var(--paragraph-background-color);
+    margin-top: calc(-1 * var(--nav-height, 50px));
+    margin-bottom: calc(-1 * var(--footer-height, 75px));
+}
+
 body {
     margin: 0; 
     padding: 0;

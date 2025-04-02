@@ -12,10 +12,10 @@
   --paragraph-font: "Source Sans Pro", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #00121d;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #004aad; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --headline-color-on-white: #00121d;  /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #004aad; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: #004aad  ;
   --nav-link-color: white;
   --nav-background-color: #00121d;
@@ -56,7 +56,7 @@ main > div {
 
 .griddy .proj {
     margin-left: 50px;
-    grid-column: 1 / span 5; 
+    grid-column: 1 / span 5;
     grid-row: 1;
 }
 
@@ -69,12 +69,14 @@ main > div {
     width: 40%;
     margin-left: 250px;
     margin-top: 100px;
+    background-color: var(--paragraph-background-color);
 }
 
 .pic2 {
     width: 40%;
     margin-left: 270px;
     margin-top: 225px;
+    background-color: var(--paragraph-background-color);
 }
 
 .griddy .idea {
@@ -137,7 +139,7 @@ main > div {
 }
 
 body {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     overflow-x: hidden;
     height: 100vh;

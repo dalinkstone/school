@@ -53,20 +53,24 @@ main > div {
 .griddy-skills .datas {
     grid-column: 1;
     grid-row: 3;
-    margin-top: -175px;
+    margin-top: 50px;
 }
 
 .snake {
+    grid-row: 2;
+    grid-column: 1;
     width: 50%;
-    margin-left: 150px;
-    margin-top: 0;
-}
+    margin-top: 50px;
+    margin-left: 100px;
+  }
 
-.data-pic {
+  .data-pic {
+    grid-row: 3;
+    grid-column: 1;
     width: 50%;
-    margin-left: 150px;
-    margin-top: -150px;
-}
+    margin-top: -100px;
+    margin-left: 100px;
+  }
 
 .griddy {
     display: grid;
@@ -75,9 +79,7 @@ main > div {
 
 .griddy-skills {
     display: grid;
-    grid-template-columns: 200px 150px 500px 1fr;
-    grid-template-rows: auto repeat(3, minmax(100px, auto)) auto;
-    gap: 0, 50px;
+    grid-template-columns: 200px 150px 1fr auto;
 }
 
 .griddy section {
@@ -120,59 +122,40 @@ main > div {
     grid-row: 5;
 }
 
-.griddy-skills .programming {
+.programming, .technical, .data-div {
     background-color: var(--paragraph-background-color);
-    grid-row: 2;
-    grid-column: 3;
-    margin-left: 75px;
     width: 150px;
-    text-align: center;
-    line-height: 50px;
+    height: 75px;
+    padding: 15px;
+    margin-left: 75px;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 1;
 }
 
-.griddy-skills .prog-sect {
-    grid-row: 2;
-    grid-column: 4;
-    margin-left: 250px;
-    margin-top: -30px;
-    list-style-type: none;
+.programming { grid-row: 2; grid-column: 2; }
+.technical { grid-row: 3; grid-column: 2; margin-top: -75px;}
+.data-div { grid-row: 4; grid-column: 2; margin-top: -75px; }
+
+.prog-sect, .tech-sect, .data-sect {
+    width: 500px;
+    height: 75px;
+    padding: 20px;
+    position: relative;
 }
 
-.griddy-skills .technical {
+.prog-sect { grid-row: 2; grid-column: 3; margin-top: -25px; margin-left: 100px; list-style-type: none; }
+.tech-sect { grid-row: 3; grid-column: 3; margin-top: -100px; margin-left: 100px; list-style-type: none; }
+.data-sect { grid-row: 4; grid-column: 3; margin-top: -100px; margin-left: 100px; list-style-type: none; }
+
+.griddy-skills li {
     background-color: var(--paragraph-background-color);
-    grid-row: 3;
-    grid-column: 3;
-    margin-left: 75px;
-    width: 150px;
+    width: 500px;
+    height: 75px;
     text-align: center;
-    line-height: 50px;
+    line-height: 75px;
 }
 
-.griddy-skills .tech-sect {
-    grid-row: 3;
-    grid-column: 4;
-    margin-left: 250px;
-    margin-top: -30px;
-    list-style-type: none;
-}
-
-.griddy-skills .data-div {
-    background-color: var(--paragraph-background-color);
-    margin-left: 75px;
-    grid-row: 4;
-    grid-column: 3;
-    width: 150px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.griddy-skills .data-sect{
-    grid-row: 4;
-    grid-column: 4;
-    margin-left: 250px;
-    margin-top: -30px;
-    list-style-type: none;
-}
 
 .griddy .sec {
     grid-row: 2;
@@ -240,14 +223,6 @@ main > div {
     position: relative;
 }
 
-.griddy-skills section {
-    margin-bottom: 0;
-    width: 500px;
-    padding: 15px;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -282,7 +257,7 @@ body > div {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     box-sizing: border-box;
 }
 

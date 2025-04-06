@@ -74,7 +74,6 @@ main > div {
 
 .griddy {
     display: grid;
-    grid-template: auto;
 }
 
 .griddy-skills {

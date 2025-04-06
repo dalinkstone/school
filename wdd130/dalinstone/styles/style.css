@@ -233,8 +233,9 @@ main > div {
     grid-row: 1 / 5;
     grid-column: 5;
     background-color: var(--paragraph-background-color);
-    margin-top: calc(-1 * var(--nav-height, 20px));
+    margin-top: calc(-1 * var(--nav-height, 50px));
     margin-bottom: calc(-1 * var(--footer-height, 75px));
+    margin-right: 150px;
     width: 100px;
     position: relative;
 }
